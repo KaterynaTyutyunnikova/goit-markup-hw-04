@@ -128,9 +128,10 @@ a {
     ),
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
-  width: 1440px;
+  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+  background-position: center;
 }
 .hero-title {
   font-weight: 700;
@@ -161,6 +162,7 @@ a {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -216,9 +218,10 @@ a {
   align-items: center;
   margin-bottom: 8px;
 }
-.icons-dec.icon {
+.icons-dec .icon {
   width: 64px;
   height: 64px;
+  fill: #f4f4fd;
 }
 
 .team {
@@ -308,6 +311,7 @@ a {
   width: calc((100% - 48px) / 3);
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .thumba {
@@ -392,7 +396,7 @@ a {
   max-width: 264px;
 }
 
-.text-soc {
+.text-media {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -400,25 +404,34 @@ a {
   color: #fff;
   margin-bottom: 16px;
 }
-.footer-social-link-list {
+.f-link-list {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-list-item a:hover {
+.f-list-item a:hover {
   background-color: #31d0aa;
 }
-.footer-list-item a:focus {
+.f-list-item a:focus {
   background-color: #31d0aa;
 }
 
 .footer-social {
   text-align: center;
 }
-.footer-list-item {
+.f-list-item {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-list-item {
+.f-list-item {
   display: inline-block;
   padding: 8px;
   margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-ifo {
+  margin-right: 120px;
+}
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
 }
