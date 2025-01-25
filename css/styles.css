@@ -286,6 +286,9 @@ a {
   align-items: center;
   fill: #f4f4fd;
 }
+.list-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .social-link-list .list-item a:hover,
 .social-link-list .list-item a:focus {
   background-color: #404bbf;
@@ -443,4 +446,13 @@ a {
 }
 .footer-circle {
   fill: #f4f4fd;
+}
+
+.f-link-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-social {
+  width: 100px;
+  height: 100px;
 }
