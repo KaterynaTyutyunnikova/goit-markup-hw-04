@@ -312,11 +312,12 @@ a {
 .portfolio-item {
   background-color: #fff;
   width: calc((100% - 48px) / 3);
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.portfolio-item:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
 .thumba {
   position: relative;
   overflow: hidden;
@@ -336,7 +337,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px 32px;
 }
-.thumba:hover .thumba-desc {
+.portfolio-item:hover .thumba-desc {
   transform: translateY(0);
 }
 .portfolio-list {
@@ -415,27 +416,17 @@ a {
   background-color: #31d0aa;
 }
 
-.footer-social {
-  text-align: center;
-}
 .footer-ifo {
   margin-right: 120px;
 }
-.f-list-item {
-  display: inline-block;
-  padding: 8px;
-  margin: auto;
-}
+
 .f-list-item {
   width: 40px;
   height: 40px;
 }
 .page-footer .container {
   display: flex;
-  justify-content: left;
-  flex-direction: row;
   align-items: baseline;
-  gap: 16px;
 }
 .f-link-list .f-list-item .footer-circle {
   border-radius: 50%;
@@ -452,8 +443,4 @@ a {
 .f-link-list {
   display: flex;
   gap: 16px;
-}
-.f-link-list {
-  width: 100px;
-  height: 100px;
 }
